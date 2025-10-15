@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💻 CEH Projects</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      border-left: 4px solid #03DAC6;
+      padding-left: 0.5rem;
+    }
+
+    p, ul {
+      margin-left: 0.25rem;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 1.5rem;
+      padding-left: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    ::selection {
+      background: #03DAC6;
+      color: #000;
+    }
+
+    a {
+      color: #03DAC6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(3,218,198,0.06);
+      border-left: 4px solid #03DAC6;
+      color: #cfeee9;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>💻 CEH Projects</h1>
+
+  <div class="note">
+    Projects were performed in isolated, authorized lab environments for learning and assessment purposes. All testing adhered to ethical guidelines and applicable laws.
+  </div>
+
+  <h2>📄 Nessus Report</h2>
+  <p>
+    Used Nessus to perform a comprehensive vulnerability assessment against a Windows 10 lab machine. The scan identified open ports, running services, and software versions and flagged issues such as outdated software, missing security patches, and weak configurations. Nessus produced detailed findings with severity ratings and remediation recommendations, which I used to prioritize fixes and improve the target system's security posture.
+  </p>
+
+  <h2>🔐 Exploitation Lab — Gaining Access to a Machine (Controlled Environment)</h2>
+  <p>
+    In a controlled Kali Linux-based lab environment, I demonstrated how known vulnerabilities can lead to system compromise when systems are unpatched. After conducting reconnaissance to identify exposed services on an isolated Windows 7 test VM, I validated a publicly documented, legacy vulnerability and confirmed the potential for remote compromise in that lab setup. This exercise emphasized the importance of timely patching, proper network segmentation, and defense-in-depth controls.
+  </p>
+  <ul>
+    <li>Validated risk from legacy, unpatched software in a safe, isolated environment.</li>
+    <li>Documented indicators of compromise and post‑exercise remediation steps to secure systems.</li>
+    <li>Prepared concise remediation guidance for patching, hardening, and monitoring to prevent similar attacks.</li>
+  </ul>
+
+  <h2>🧾 Key Takeaways</h2>
+  <ul>
+    <li>Vulnerability scanning (Nessus) is essential for identifying and prioritizing fixes across assets.</li>
+    <li>Unpatched legacy systems can present critical risks—patch management and asset inventory are crucial.</li>
+    <li>Testing in authorized lab environments helps build actionable, non-destructive remediation plans for production systems.</li>
+  </ul>
+</body>
+</html>
